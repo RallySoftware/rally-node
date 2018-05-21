@@ -1,7 +1,7 @@
 // NOTE: Environment variable RALLY_API_KEY (or RALLY_USERNAME and RALLY_PASSWORD)
 // must be defined to actually run this example
 var rally = require('..'),
-    restApi = rally(),
+    restApi = rally({ server: 'https://ueshellrally.testn.f4tech.com', user: "kmitchell@rallydev.com", pass: "Password" }),
     refUtils = rally.util.ref;
 
 function createDefect() {
